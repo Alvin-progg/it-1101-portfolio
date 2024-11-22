@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alvin-Progg</title>
+    <link rel="stylesheet" href="global.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    
+</head>
+<body>
+    <main>
+        <nav class="flex justify-between items-center m-7 h-[5] w-auto ">
+            <div><a href="index.html" class="font-bold text-white text-2xl ">Alvin-<span class="text-[#00ADB5]">Progg</span></a></div>
+            <ul class="text-white flex gap-12">
+                <li><a href="#" class="border border-white p-2 rounded-md hover:border-[#00ADB5] hover:text-[#00ADB5]">Home</a></li>
+                <li><a href="#" class="border border-white p-2 rounded-md hover:border-[#00ADB5] hover:text-[#00ADB5]">About</a></li>
+                <li><a href="#" class="border border-white p-2 rounded-md hover:border-[#00ADB5] hover:text-[#00ADB5]">Portfolio</a></li>
+            </ul>
+        <a href="#" class="text-[#00ADB5] border border-[#00ADB5] p-2  hover:bg-cyan-600 hover:text-white rounded-md">Contact Me</a>
+        </nav>
+
+        <div class="flex justify-between items-center p-20 gap-32 m-52 w-auto h-auto absolute">
+            <img src="/images/20231021_131842 (1).jpg" class="size-80 rounded-full border-[#00ADB5] ml-52 border-2 " alt="my face">
+            <div class="text-white justify-between text-3xl m-5 items-center  py-20  ">
+                <h2 class="">Hello there!</h2>
+                <h3 class=""">I am <span class="text-[#00ADB5] font-bold" ">Alvin Aloya</span></h3>
+                <p class="">A <Span class="text-[#00ADB5] font-semibold  " id="element"></Span> that you can trust</p>
+                <button class="text-[#00ADB5] border border-[#00ADB5] hover:bg-cyan-600 hover:text-white mt-14 p-2 rounded-md ">Download CV</button>
+            </div>
+            
+        </div>
+    </main>
+
+    <script>
+            var typed = new Typed('#element', {
+                strings: [' Front-end Developer', ' Android Developer'],
+                typeSpeed: 100,
+                loop: true,
+                loopCount: Infinity,
+                backDelay: 3000,
+            });
+    </script>
+</body>
+
+</html>
