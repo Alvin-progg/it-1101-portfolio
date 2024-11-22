@@ -8,29 +8,53 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"/>
 </head>
 <body>
-    <main>
-        <nav class="flex justify-between items-center m-7 h-[5] w-auto ">
+    <main class="">
+        <!-- Navbar for large screens -->
+
+        <nav class=" justify-between items-center m-7 h-[5] w-auto hidden lg:flex " >
             <div><a href="index.html" class="font-bold text-white text-2xl ">Alvin-<span class="text-[#00ADB5]">Progg</span></a></div>
             <ul class="text-white flex gap-12">
                 <li><a href="#" class="border border-white p-2 rounded-md hover:border-[#00ADB5] hover:text-[#00ADB5]">Home</a></li>
                 <li><a href="#" class="border border-white p-2 rounded-md hover:border-[#00ADB5] hover:text-[#00ADB5]">About</a></li>
                 <li><a href="#" class="border border-white p-2 rounded-md hover:border-[#00ADB5] hover:text-[#00ADB5]">Portfolio</a></li>
             </ul>
-        <a href="#" class="text-[#00ADB5] border border-[#00ADB5] p-2  hover:bg-cyan-600 hover:text-white rounded-md">Contact Me</a>
+            <a href="#" class="text-[#00ADB5] border border-[#00ADB5] p-2  hover:bg-cyan-600 hover:text-white rounded-md">Contact Me</a>
         </nav>
 
-        <div class="flex justify-between items-center p-20 gap-32 m-52 w-auto h-auto absolute">
-            <img src="/images/20231021_131842 (1).jpg" class="size-80 rounded-full border-[#00ADB5] ml-52 border-2 " alt="my face">
-            <div class="text-white justify-between text-3xl m-5 items-center  py-20  ">
+
+        <div class="lg:hidden m-5 justify-between flex top-0  ">
+            <div><a href="index.html" class="font-bold text-white text-lg ">Alvin-<span class="text-[#00ADB5]">Progg</span></a></div>
+            <button class="text-white text-lg"   id="navToggle" ><i class="bi bi-menu-button-wide"></i></button>
+
+        </div>
+        <div class=" flex justify-between items-center p-20  max-sm:overflow-hidden gap-32 m-52  absolute  max-sm:justify-center max-sm:items-center max-sm:gap-10 max-sm:m-0  max-sm:flex-col  ">
+            <img src="/images/20231021_131842 (1).jpg " class="size-80 max-sm:size-64  max-sm:items-center max-sm:justify-center rounded-full   border-[#00ADB5] ml-52 max-sm:ml-0 border-2 " alt="my face">
+            <div class="text-white justify-between text-3xl max-sm:ml-20 max-sm:w-full max-sm:text-xl m-5 items-center max-sm:py-16 py-20  ">
                 <h2 class="">Hello there!</h2>
                 <h3 class=""">I am <span class="text-[#00ADB5] font-bold" ">Alvin Aloya</span></h3>
-                <p class="">A <Span class="text-[#00ADB5] font-semibold  " id="element"></Span> that you can trust</p>
-                <button class="text-[#00ADB5] border border-[#00ADB5] hover:bg-cyan-600 hover:text-white mt-14 p-2 rounded-md ">Download CV</button>
+                <p class="max-sm:absolute">A <Span class="text-[#00ADB5] font-semibold  " id="element"></Span> that you can trust</p>
+                <button class="text-[#00ADB5] max-sm:mt-20 border border-[#00ADB5] hover:bg-cyan-600 hover:text-white mt-14 p-2 rounded-md ">Download CV</button>
             </div>
             
         </div>
+
+        <!-- Navbar for small screens -->
+        <nav class="absolute hidden top-0  right-0 h-full w-[200px] py-20 pl-5 lg:hidden gap-9 text-xl font-semi-bold items-center bg-white  navContent" id="navContent" >
+            <button id="navToggleRm"><i class="bi bi-box-arrow-in-left text-1xl"></i></button>
+            <ul class=" my-32 py-2 gap-11  flex flex-col ">
+                <li><a href="#" class="underline">Home</a></li>
+                <li><a href="#">About</a></li>
+                <a href="#" class="">Portfolio</a>
+                <li><a href="#" class="">Contact me</a></li>
+            </ul>
+            
+        </nav>
+
+
     </main>
 
     <script>
@@ -43,5 +67,6 @@
             });
     </script>
 </body>
+    <script src="index.js"></script>
 
 </html>
