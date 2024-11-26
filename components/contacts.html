@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alvin-Progg</title>
+    <link rel="stylesheet" href="/global.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"  rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>    
+    <script src="https://kit.fontawesome.com/1dd414f313.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"/>
+</head>
+<body>
+    <main class="">
+        <!-- Navbar for large screens -->
+
+        <nav class=" justify-between items-center m-7 h-[5] w-auto hidden  lg:flex " >
+            <div><a href="/index.html" class="font-bold text-white text-2xl ">Alvin-<span class="text-[#00ADB5]">Progg</span></a></div>
+            <ul class="text-white flex gap-12">
+                <li><a href="/index.html" class="border border-white p-2 rounded-md hover:border-[#00ADB5] hover:text-[#00ADB5]">Home</a></li>
+                <li><a href="/components/about.html" class="border border-white p-2 rounded-md hover:border-[#00ADB5] hover:text-[#00ADB5]">About</a></li>
+                <li><a href="#" class="border border-white p-2 rounded-md hover:border-[#00ADB5] hover:text-[#00ADB5]">Portfolio</a></li>
+            </ul>
+            <a href="/components/contacts.html" class="text-[#00ADB5] border border-[#00ADB5] p-2  hover:bg-cyan-600 hover:text-white rounded-md">Contact Me</a>
+        </nav>
+
+        <!-- Logo and Hamburger menu icon -->
+        <div class="lg:hidden m-5 justify-between flex top-0  ">
+            <div><a href="/index.html" class="font-bold text-white text-lg ">Alvin-<span class="text-[#00ADB5]">Progg</span></a></div>
+            <button class="text-white text-lg"   id="navToggle" ><i class="bi bi-menu-button-wide"></i></button>
+        
+        </div>  
+
+        <section class="w-full justify-center items-center flex max-sm:flex-col ">
+            <div class="w-[70vh] h-[70vh]  rounded-xl mt-10 border ml-32 max-sm:mt-[8vh] border-cyan-800 justify-between hover:border-white text-white items-center m-20 max-sm:m-0 max-sm:w-[40vh]  max-sm:mb-10">
+                <div class="flex justify-center items-center flex-col  gap-5 m-20 max-sm:gap-4  max-sm:text-2xl">
+                    <h4 class="text-5xl mb-4 font-bold  text-cyan-500 max-sm:text-2xl max-sm:mt-[-5vh] ">Contact Me!</h4>
+                    <input type="text" class="w-[500px] rounded bg-[#222831] border focus:border-white max-sm:w-[300px] max-sm:text-sm border-cyan-800" placeholder="name" >
+                    <input type="email"  class="w-[500px] bg-[#222831] border max-sm:w-[300px]  focus:border-white max-sm:text-sm border-cyan-800" placeholder="example@.com" id="">
+                    <textarea name="message" id="messageContent" class="bg-[#222831] max-sm:w-[300px] focus:border-white  resize-none border  max-sm:text-sm border-cyan-800 h-[300px] w-[500px] p-2 rounded" placeholder="Message"></textarea>
+                    <div class="max-sm:mt-[-4vh]">
+                        <button class=" w-[500px] text-3xl text-cyan-500 max-sm:w-[300px]  max-sm:mt-20 border border-cyan-800 hover:bg-cyan-800 hover:text-white mt-14 p-2 rounded-md ">Send</button>
+                    </div>
+                </div>
+                
+                
+            </div>
+            <div class="text-5xl flex flex-col max-sm:flex-row  max-sm:gap-10 max-sm:text-3xl text-cyan-500 gap-20 ">
+                <a href=""><i class="fa-brands fa-facebook hover:text-white"></i></a>
+                <a href=""><i class="fa-brands fa-github  hover:text-white"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin  hover:text-white"></i></a>
+                <a href=""><i class="fa-brands fa-square-instagram  hover:text-white"></i></a>
+
+            </div>
+        </section>
+
+        <!-- Navbar for small screens -->
+        <nav class="fixed hidden top-0  right-0 h-full w-[200px] py-20 pl-5 lg:hidden gap-9 text-xl font-semi-bold items-center bg-white  navContent" id="navContent" >
+            <button id="navToggleRm"><i class="bi bi-box-arrow-in-left text-1xl"></i></button>
+            <ul class=" my-32 py-2 gap-11  flex flex-col ">
+                <li><a href="/index.html" class="">Home</a></li>
+                <li><a href="about.html" class="">About</a></li>
+                <a href="#" class="">Portfolio</a>
+                <li><a href="/components/contacts.html" class="underline">Contact me</a></li>
+            </ul>
+            
+        </nav>
+    </main>
+
+
+    
+</body>
+<!-- link js file to html -->
+    <script src="/index.js"></script>
+
+</html>
