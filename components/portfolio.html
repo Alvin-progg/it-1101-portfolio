@@ -3,9 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/global.css">
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"/>
+    <script src="https://kit.fontawesome.com/1dd414f313.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
+    <main class="">
+        <!-- Navbar for large screens -->
+
+        <nav class=" justify-between items-center m-7 h-[5] w-auto hidden lg:flex " >
+            <div><a href="/index.html" class="font-bold text-white text-2xl ">Alvin-<span class="text-[#00ADB5]">Progg</span></a></div>
+            <ul class="text-white flex gap-12">
+                <li><a href="/index.html" class="border border-white p-2 rounded-md hover:border-[#00ADB5] hover:text-[#00ADB5]">Home</a></li>
+                <li><a href="/components/about.html" class="border border-white p-2 rounded-md hover:border-[#00ADB5] hover:text-[#00ADB5]">About</a></li>
+                <li><a href="/components/portfolio.html" class="border border-white p-2 rounded-md hover:border-[#00ADB5] hover:text-[#00ADB5]">Portfolio</a></li>
+            </ul>
+            <a href="/components/contacts.html" class="text-[#00ADB5] border border-[#00ADB5] p-2  hover:bg-cyan-600 hover:text-white rounded-md">Contact Me</a>
+        </nav>
+
+        <!-- Logo and Hamburger menu icon -->
+        <div class="lg:hidden m-5 justify-between flex top-0  ">
+            <div><a href="index.html" class="font-bold text-white text-lg ">Alvin-<span class="text-[#00ADB5]">Progg</span></a></div>
+            <button class="text-white text-lg"   id="navToggle" ><i class="bi bi-menu-button-wide"></i></button>
+        </div>
+
+        <section class="w-full justify-center items-center flex gap-5 ">
+            <!-- Prev Button -->
+            <button class="carousel-prev flex justify-center max-sm:hidden items-center text-3xl text-cyan-700">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+            </button>
+        
+            <div class="relative w-[70vh] h-[70vh] mt-10 max-sm:w-[40vh] max-sm:mt-[8vh] " id="trackCarousel">
+                <div class="flex transition-transform duration-500 overflow-hidden">
+                    <!-- Slide 1 -->
+                    <div class="card-item w-full flex-shrink-0  flex-col border rounded-md border-cyan-800 p-10 text-white hover:border-white opacity-0 hidden h-[70vh]">
+                        <div class="flex gap-2 mb-4 max-sm:text-2xl items-center text-4xl">
+                            <i class="fa-solid fa-briefcase"></i>
+                            <h1 class="text-cyan-500 font-bold">Main Portfolio</h1>
+                        </div>
+                        <p class="text-2xl max-sm:text-xl">
+                            This project is a showcase of my React and TailwindCSS skills, designed to highlight my ability to build responsive, user-friendly web applications. The focus of the project is environmental responsibility, blending interactive features with a clean, modern aesthetic. Dive into the details of the project to see how I integrated React’s dynamic capabilities with TailwindCSS for a seamless user experience.
+
+
+                        </p>
+                        <a href="https://github.com/Alvin-progg/main-portfolio" target="_blank" class="text-xl max-sm:p-1 max-sm:mt-5 mt-10 border border-white w-[80px] items-center flex justify-center p-2 rounded hover:text-cyan-500 hover:border-cyan-500">Source</a>
+                    </div>
+                    
+                    <!-- Slide 2 -->
+                    <div class="card-item w-full flex-shrink-0  flex-col border rounded-md border-cyan-800 p-10 text-white hover:border-white opacity-0 hidden h-[70vh]">
+                        <div class="flex gap-2 mb-4 max-sm:text-2xl items-center text-4xl">
+                            <i class="fa-solid fa-briefcase"></i>
+                            <h1 class="text-cyan-500 font-bold">Canva Guide App</h1>
+                        </div>
+                        <p class="text-2xl max-sm:text-xl">
+                            This React Native app, built with TailwindCSS, offers a comprehensive set of tutorials for mastering Canva. Developed as part of a research project in grade 12, the app guides users through various features and tools of Canva, providing step-by-step instructions for creating stunning designs. With an intuitive interface and responsive design, this project showcases my ability to build practical, educational apps that help users navigate and learn new software effectively.
+                        </p>
+                        <a href="https://github.com/Alvin-Conrad/canva-guide-app" class=" max-sm:p-1 max-sm:mt-5 text-xl mt-10 border border-white w-[80px] items-center flex justify-center p-2 rounded hover:text-cyan-500 hover:border-cyan-500">Source</a>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="card-item w-full flex-shrink-0  flex-col border rounded-md border-cyan-800 p-10 text-white hover:border-white opacity-0 hidden h-[70vh]">
+                        <div class="flex gap-2 mb-4  max-sm:text-2xl items-center text-4xl">
+                            <i class="fa-solid fa-briefcase"></i>
+                            <h1 class="text-cyan-500 font-bold">Slot Machine</h1>
+                        </div>
+                        <p class="text-2xl max-sm:text-xl">
+                            This is a console-based slot machine game built with JavaScript that runs in environments like Command Prompt. It was my first project while learning JavaScript, where I applied basic programming concepts such as random number generation and logic handling. The game provides a simple yet engaging simulation of a slot machine experience, running entirely within the command line interface and helping me solidify my JavaScript skills.
+                        </p>
+                        <a href="https://github.com/Alvin-Conrad/slot-machine" class="text-xl mt-10 border max-sm:p-1 max-sm:mt-5  border-white w-[80px] items-center flex justify-center p-2 rounded hover:text-cyan-500 hover:border-cyan-500">Source</a>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Next Button -->
+            <button class="carousel-next flex justify-center items-center  max-sm:hidden text-3xl text-cyan-700">
+                <i class="fa-solid fa-circle-arrow-right"></i>
+            </button>
+        </section>
+        
+
+        <!-- Navbar for small screens -->
+        <nav class="absolute hidden top-0  right-0 h-full w-[200px] py-20 pl-5 lg:hidden gap-9 text-xl font-semi-bold items-center bg-white  navContent" id="navContent" >
+            <button id="navToggleRm"><i class="bi bi-box-arrow-in-left text-1xl"></i></button>
+            <ul class=" my-32 py-2 gap-11  flex flex-col ">
+                <li><a href="/index.html" >Home</a></li>
+                <li><a href="/components/about.html">About</a></li>
+                <a href="/components/portfolio.html" class="underline">Portfolio</a>
+                <li><a href="/components/contacts.html" class="">Contact me</a></li>
+            </ul>
+            
+        </nav>
+    </main>
 </body>
+<script src="/index.js"></script>
+
 </html>
