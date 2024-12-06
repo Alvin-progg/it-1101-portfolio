@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", ()=> {
     const downloadBtn = document.getElementById('download').addEventListener (
         'click' , ()=> {
             const link = document.createElement('a')
-            link.href = '/assets/test.txt';
+            link.href = 'test.txt';
             link.download = 'CV test.txt';
             document.body.appendChild(link);
             link.click();

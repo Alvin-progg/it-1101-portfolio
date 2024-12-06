@@ -14,14 +14,14 @@
     <main class="">
         <!-- Navbar for large screens -->
 
-        <nav class=" justify-between items-center m-7 h-[5] w-auto hidden lg:flex " >
-            <div><a href="/index.html" class="font-bold text-white text-2xl ">Alvin-<span class="text-[#00ADB5]">Progg</span></a></div>
+        <nav class=" justify-between items-center m-7 h-[5] w-auto hidden  lg:flex " >
+            <div><a href="index.html" class="font-bold text-white text-2xl ">Alvin-<span class="text-[#00ADB5]">Progg</span></a></div>
             <ul class="text-white flex gap-12">
-                <li><a href="/index.html" class="border border-white p-2 rounded-md hover:border-[#00ADB5] hover:text-[#00ADB5]">Home</a></li>
-                <li><a href="/components/about.html" class="border border-white p-2 rounded-md hover:border-[#00ADB5] hover:text-[#00ADB5]">About</a></li>
-                <li><a href="/components/portfolio.html" class="border border-white p-2 rounded-md hover:border-[#00ADB5] hover:text-[#00ADB5]">Portfolio</a></li>
+                <li><a href="index.html" class="border border-white p-2 rounded-md hover:border-[#00ADB5] hover:text-[#00ADB5]">Home</a></li>
+                <li><a href="about.html" class="border border-white p-2 rounded-md hover:border-[#00ADB5] hover:text-[#00ADB5]">About</a></li>
+                <li><a href="portfolio.html" class="border border-white p-2 rounded-md hover:border-[#00ADB5] hover:text-[#00ADB5]">Portfolio</a></li>
             </ul>
-            <a href="/components/contacts.html" class="text-[#00ADB5] border border-[#00ADB5] p-2  hover:bg-cyan-600 hover:text-white rounded-md">Contact Me</a>
+            <a href="contacts.html" class="text-[#00ADB5] border border-[#00ADB5] p-2  hover:bg-cyan-600 hover:text-white rounded-md">Contact Me</a>
         </nav>
 
         <!-- Logo and Hamburger menu icon -->
@@ -32,11 +32,11 @@
 
         <section class="w-full justify-center items-center flex gap-5 ">
             <!-- Prev Button -->
-            <button class="carousel-prev flex justify-center max-sm:hidden items-center text-3xl text-cyan-700">
+            <button class="carousel-prev flex justify-center max-sm:hidden items-center text-3xl text-cyan-700  hover:text-white  ">
                 <i class="fa-solid fa-circle-arrow-left"></i>
             </button>
         
-            <div class="relative w-[70vh] h-[70vh] mt-10 max-sm:w-[40vh] max-sm:mt-[8vh] " id="trackCarousel">
+            <div class="w-[70vh] h-[70vh] mt-10 max-sm:w-[40vh] max-sm:mt-[8vh] relative" id="trackCarousel">
                 <div class="flex transition-transform duration-500 overflow-hidden">
                     <!-- Slide 1 -->
                     <div class="card-item w-full flex-shrink-0  flex-col border rounded-md border-cyan-800 p-10 text-white hover:border-white opacity-0 hidden h-[70vh]">
@@ -74,11 +74,22 @@
                         </p>
                         <a href="https://github.com/Alvin-Conrad/slot-machine" class="text-xl mt-10 border max-sm:p-1 max-sm:mt-5  border-white w-[80px] items-center flex justify-center p-2 rounded hover:text-cyan-500 hover:border-cyan-500">Source</a>
                     </div>
+                    <!-- Slide 4 -->
+                    <div class="card-item w-full flex-shrink-0  flex-col border rounded-md border-cyan-800 p-10 text-white hover:border-white opacity-0 hidden h-[70vh]">
+                        <div class="flex gap-2 mb-4  max-sm:text-2xl items-center text-4xl">
+                            <i class="fa-solid fa-briefcase"></i>
+                            <h1 class="text-cyan-500 font-bold">Weather app</h1>
+                        </div>
+                        <p class="text-2xl max-sm:text-xl">
+                            A Weather App built using HTML, CSS, and JavaScript. This project played a significant role in helping me strengthen my skills in DOM manipulation by dynamically updating and displaying real-time weather data. It also provided me with a hands-on experience in working with APIs, teaching me how to fetch and process data from external sources effectively. Through this app, I gained a deeper understanding of integrating responsive design and user interaction to create a seamless experience for users.
+                        </p>
+                        <a href="https://github.com/Alvin-Conrad/weather-app" class="text-xl mt-10 border max-sm:p-1 max-sm:mt-5  border-white w-[80px] items-center flex justify-center p-2 rounded hover:text-cyan-500 hover:border-cyan-500">Source</a>
+                    </div>
                 </div>
             </div>
         
             <!-- Next Button -->
-            <button class="carousel-next flex justify-center items-center  max-sm:hidden text-3xl text-cyan-700">
+            <button class="carousel-next flex justify-center items-center hover:text-white  max-sm:hidden text-3xl text-cyan-700">
                 <i class="fa-solid fa-circle-arrow-right"></i>
             </button>
         </section>
@@ -88,10 +99,10 @@
         <nav class="absolute hidden top-0  right-0 h-full w-[200px] py-20 pl-5 lg:hidden gap-9 text-xl font-semi-bold items-center bg-white  navContent" id="navContent" >
             <button id="navToggleRm"><i class="bi bi-box-arrow-in-left text-1xl"></i></button>
             <ul class=" my-32 py-2 gap-11  flex flex-col ">
-                <li><a href="/index.html" >Home</a></li>
-                <li><a href="/components/about.html">About</a></li>
-                <a href="/components/portfolio.html" class="underline">Portfolio</a>
-                <li><a href="/components/contacts.html" class="">Contact me</a></li>
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <a href="portfolio.html" class="underline">Portfolio</a>
+                <li><a href="contacts.html" class="">Contact me</a></li>
             </ul>
             
         </nav>
